@@ -5,8 +5,8 @@ interface seoInterface {
   pageDescription: string
   pagePath: string
   pageImg: string
-  pageImgWidth: string
-  pageImgHeight: string
+  pageImgWidth: number
+  pageImgHeight: number
 }
 
 export const Seo: React.FC<seoInterface> = ({
