@@ -1,7 +1,13 @@
 import type { NextPage } from 'next'
 
+import { Layout } from '@/components/common/layout/Layout'
+
 const Home: NextPage = () => {
-  return <div className="text-3xl font-bold underline">Hello</div>
+  return (
+    <div className="">
+      <Layout>Hello World</Layout>
+    </div>
+  )
 }
 
 export default Home
