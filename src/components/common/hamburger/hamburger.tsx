@@ -1,21 +1,22 @@
 import Link from 'next/link'
-
+//import React, { FC, useState } from 'react'
 export const Menu: React.FC = () => {
+  //const [isOpen, setState] = useState(false)
   return (
-    <div>
+    <div className="">
       <ul>
         <li>
-          <Link href="">
+          <Link href="#">
             <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="#">
             <a>Works</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="#">
             <a>Posts</a>
           </Link>
         </li>
