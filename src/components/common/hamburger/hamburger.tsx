@@ -1,9 +1,25 @@
 import Link from 'next/link'
-//import React, { FC, useState } from 'react'
-export const Menu: React.FC = () => {
-  //const [isOpen, setState] = useState(false)
+import type { FC } from 'react'
+import { useState } from 'react'
+
+export const Menu: FC = () => {
+  const [isOpen, setState] = useState(false)
+
+  const handleChange = () => {
+    setState(!isOpen)
+    console.log(isOpen)
+  }
+
   return (
     <div className="">
+      <button
+        className=""
+        onClick={() => {
+          return handleChange()
+        }}
+      >
+        ボタン
+      </button>
       <ul>
         <li>
           <Link href="#">
