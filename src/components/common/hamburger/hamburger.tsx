@@ -7,7 +7,6 @@ export const Menu: FC = () => {
 
   const handleChange = () => {
     setState(!isOpen)
-    console.log(isOpen)
   }
 
   return (
