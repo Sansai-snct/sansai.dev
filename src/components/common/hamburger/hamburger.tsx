@@ -21,23 +21,25 @@ export const Menu: FC = () => {
         >
           ボタン
         </button>
-        <ul className="md:hidden">
-          <li>
-            <Link href="#">
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>Works</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>Posts</a>
-            </Link>
-          </li>
-        </ul>
+        {isOpen ? (
+          <ul className="md:hidden">
+            <li>
+              <Link href="#">
+                <a>About</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <a>Works</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <a>Posts</a>
+              </Link>
+            </li>
+          </ul>
+        ) : undefined}
       </div>
     </nav>
   )
