@@ -15,7 +15,7 @@ export const Menu: FC = () => {
         <button
           className="bg-gray-400"
           onClick={() => {
-            return handleChange()
+            handleChange()
           }}
         >
           ボタン
