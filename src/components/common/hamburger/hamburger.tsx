@@ -11,7 +11,7 @@ export const Menu: FC = () => {
 
   return (
     <nav className="flex">
-      <div className="">
+      <div className="flex-initial absolute top-0 right-0 md:hidden">
         <div>
           <button
             className="bg-gray-400 "
